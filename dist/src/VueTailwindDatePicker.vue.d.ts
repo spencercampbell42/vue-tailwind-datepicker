@@ -191,6 +191,8 @@ declare namespace _sfc_main {
             };
         }>;
         displayDatepicker: import("vue").Ref<boolean>;
+        isFirstMonday: () => any;
+        shuffleWeekdays: (days: any) => any[];
         useArray: () => boolean;
         useObject: () => boolean;
         asRange: () => boolean;
@@ -435,6 +437,7 @@ declare namespace _sfc_main {
         computed: typeof import("@vue/reactivity").computed;
         provide: typeof provide;
         nextTick: typeof nextTick;
+        isProxy: typeof isProxy;
         watchEffect: typeof watchEffect;
         watch: typeof watch;
         unref: typeof unref;
@@ -533,6 +536,8 @@ declare namespace _sfc_main {
             };
         }>;
         displayDatepicker: import("vue").Ref<boolean>;
+        isFirstMonday: () => any;
+        shuffleWeekdays: (days: any) => any[];
         useArray: () => boolean;
         useObject: () => boolean;
         asRange: () => boolean;
@@ -777,6 +782,7 @@ declare namespace _sfc_main {
         computed: typeof import("@vue/reactivity").computed;
         provide: typeof provide;
         nextTick: typeof nextTick;
+        isProxy: typeof isProxy;
         watchEffect: typeof watchEffect;
         watch: typeof watch;
         unref: typeof unref;
@@ -788,6 +794,7 @@ import { ref } from "@vue/runtime-core";
 import { reactive } from "@vue/runtime-core";
 import { provide } from "@vue/runtime-core";
 import { nextTick } from "@vue/runtime-core";
+import { isProxy } from "@vue/runtime-core";
 import { watchEffect } from "@vue/runtime-core";
 import { watch } from "@vue/runtime-core";
 import { unref } from "@vue/runtime-core";

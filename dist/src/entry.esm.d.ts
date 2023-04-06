@@ -165,6 +165,8 @@ declare const _default: {
             };
         }>;
         displayDatepicker: import("vue").Ref<boolean>;
+        isFirstMonday: () => any;
+        shuffleWeekdays: (days: any) => any[];
         useArray: () => boolean;
         useObject: () => boolean;
         asRange: () => boolean;
@@ -409,6 +411,7 @@ declare const _default: {
         computed: typeof import("@vue/reactivity").computed;
         provide: typeof import("vue").provide;
         nextTick: typeof import("vue").nextTick;
+        isProxy: typeof import("vue").isProxy;
         watchEffect: typeof import("vue").watchEffect;
         watch: typeof import("vue").watch;
         unref: typeof import("vue").unref;
