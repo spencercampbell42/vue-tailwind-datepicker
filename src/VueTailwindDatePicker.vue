@@ -976,7 +976,6 @@ const forceEmit = (s, e) => {
 // Update the displayed dates when the model changes
 watchEffect(() => {
   if (asRange() && useObject()) {
-    console.log(props.modelValue.startDate, props.modelValue.endDate)
     pickerValue.value = `${props.modelValue.startDate}${props.separator}${props.modelValue.endDate}`
   }
 })

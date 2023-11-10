@@ -1971,7 +1971,7 @@ const Fr = ["placeholder"], Nr = { class: "absolute inset-y-0 right-0 inline-fle
       r.value.previous = l(d, e.formatter.date, !0), r.value.next = l(v, e.formatter.date, !0), (l.duration(r.value.next.diff(r.value.previous)).$d.months === 2 || l.duration(r.value.next.diff(r.value.previous)).$d.months === 1 && l.duration(r.value.next.diff(r.value.previous)).$d.days === 7) && (r.value.next = r.value.next.subtract(1, "month")), (r.value.next.isSame(r.value.previous, "month") || r.value.next.isBefore(r.value.previous)) && (r.value.next = r.value.previous.add(1, "month"));
     };
     ge(() => {
-      _() && m() && (console.log(e.modelValue.startDate, e.modelValue.endDate), f.value = `${e.modelValue.startDate}${e.separator}${e.modelValue.endDate}`);
+      _() && m() && (f.value = `${e.modelValue.startDate}${e.separator}${e.modelValue.endDate}`);
     });
     const ae = (d, v) => {
       if (_())
