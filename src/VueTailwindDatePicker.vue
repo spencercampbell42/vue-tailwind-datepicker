@@ -498,6 +498,7 @@ const keyUp = () => {
   }
 }
 
+
 const setDate = (date, asNext, close) => {
   if (asRange()) {
     if (previous.value) {
@@ -971,6 +972,13 @@ const forceEmit = (s, e) => {
     datepicker.value.next = datepicker.value.previous.add(1, 'month')
   }
 }
+
+// Update the displayed dates when the model changes
+watchEffect(() => {
+  if (asRange() && useObject()) {
+    pickerValue.value = `${props.modelValue.startDate}${props.separator}${props.modelValue.endDate}`
+  }
+})
 
 const emitShortcut = (s, e) => {
   if (asRange()) {
